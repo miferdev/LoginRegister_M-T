@@ -3,9 +3,9 @@
     require_once("config.php");
 
     if (isset($_POST["register"])) {
-        $nombre = $_POST['name'];
-        $correo = $_POST['correo'];
-        $contrasenia = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $nombre = $_POST["name"];
+        $contrasenia = password_hash($_POST["password"], PASSWORD_DEFAULT);
+        $correo = $_POST["correo"];
         $telefono = $_POST["telefono"];
         $direccion = $_POST["direccion"];
         $ciudad = $_POST["ciudad"];
@@ -18,8 +18,7 @@
         $_SESSION["active_form"] = "register";
         
         }else {
-            $conn->query("INSERT INTO CLIENTES (name, email, password, role) VALUES ('$nombre', '$contrasenia', '$email', '$telefono', '$direccion_envio', '$ciudad', '$codigo_postal')");
-            #si el usuario se puede registrar, se guarda en la base de datos
+            $conn->query("INSERT INTO CLIENTES (nombre, contrasenia, email, telefono, direccion_envio, ciudad, codigo_postal) VALUES ('$nombre', '$contrasenia', '$correo', '$telefono', '$direccion', '$ciudad', '$codigoPostal')");
         }
         header("Location: index.php");
     exit();

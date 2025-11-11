@@ -1,7 +1,7 @@
 CREATE TABLE CLIENTE (
     id_cliente SERIAL PRIMARY KEY,
     nombre VARCHAR(30) NOT NULL,
-    contrasenia VARCHAR(32) NOT NULL,
+    contrasenia VARCHAR(255) NOT NULL,
     email VARCHAR(50) UNIQUE NOT NULL,
     telefono VARCHAR(13),
     direccion_envio VARCHAR(255),
