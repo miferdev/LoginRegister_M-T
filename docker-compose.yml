@@ -22,6 +22,7 @@ services:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d # Carga el script que crea la BD e inserta datos
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
