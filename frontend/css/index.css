@@ -1,6 +1,6 @@
-/* ===========================
+/* =====================================
    RESETEO Y ESTILO GLOBAL
-=========================== */
+===================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,78 +9,86 @@
 }
 
 body {
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
+    background-color: #fcf8f2; /* Beige cálido */
+    color: #3e3e3e;
+    line-height: 1.7;
 }
 
-/* ===========================
+/* =====================================
    ENCABEZADO
-=========================== */
+===================================== */
 .header {
-    background-color: #ffffff;
-    color: #333;
-    padding: 14px 30px;
+    background-color: #fff5f0; /* Blanco con matiz cálido */
+    padding: 18px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e0d8d0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo a {
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-weight: 600;
-    color: #222;
+    color: #5c3d2e; /* Marrón oscuro */
     text-decoration: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+}
+
+.logo a:hover {
+    color: #a85c3b; /* Naranja suave al pasar */
 }
 
 .main-nav a {
-    margin-left: 25px;
+    margin-left: 28px;
     text-decoration: none;
-    color: #444;
+    color: #5c3d2e;
     font-weight: 500;
+    font-size: 0.95em;
     transition: color 0.3s;
 }
 
 .main-nav a:hover {
-    color: #000;
+    color: #a85c3b;
 }
 
-/* ===========================
+/* =====================================
    PERFIL / MENÚ DESPLEGABLE
-=========================== */
+===================================== */
 .profile-dropdown {
     position: relative;
     display: inline-block;
 }
 
 .profile-btn {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 10px 15px;
-    font-size: 15px;
-    border: none;
-    border-radius: 6px;
+    background-color: #fdebd3; /* Naranja muy suave */
+    color: #5c3d2e;
+    padding: 10px 16px;
+    border: 1px solid #e6c9b5;
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: background 0.3s ease;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .profile-btn:hover {
-    background-color: #e0e0e0;
+    background-color: #fcd9b6; /* Naranja un poco más fuerte */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 110%;
+    top: 115%;
     left: 0;
-    background-color: #ffffff;
-    min-width: 180px;
-    border-radius: 6px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff5f0;
+    min-width: 190px;
+    border-radius: 8px;
+    border: 1px solid #e6d3c2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
     padding: 10px;
     z-index: 10;
 }
@@ -93,87 +101,85 @@ body {
     display: block;
     text-align: center;
     padding: 10px;
-    margin: 4px 0;
-    color: #333;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    margin: 5px 0;
+    color: #5c3d2e;
+    font-size: 0.95em;
+    border-radius: 6px;
+    transition: background-color 0.25s;
 }
 
 .dropdown-content a:hover {
-    background-color: #f5f5f5;
+    background-color: #fcd9b6;
 }
 
-/* ===========================
+/* =====================================
    BOTONES DE SESIÓN
-=========================== */
+===================================== */
 .btn-login {
-    background-color: #5c6bc0; /* Azul suave */
+    background-color: #a85c3b; /* Naranja otoño */
     color: #fff !important;
 }
 
 .btn-login:hover {
-    background-color: #3f51b5;
+    background-color: #8c4527;
 }
 
 .btn-register {
-    background-color: #81c784; /* Verde suave */
+    background-color: #c46240; /* Borgoña suave */
     color: #fff !important;
 }
 
 .btn-register:hover {
-    background-color: #66bb6a;
+    background-color: #9e3b1e;
 }
 
 .btn-logout {
-    background-color: #ef5350; /* Rojo elegante */
+    background-color: #b03a2e; /* Rojo cálido */
     color: #fff !important;
 }
 
 .btn-logout:hover {
-    background-color: #d32f2f;
+    background-color: #82211b;
 }
 
-/* ===========================
-   SECCIÓN PRINCIPAL
-=========================== */
-.main-content {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-/* ===========================
+/* =====================================
    HERO PRINCIPAL
-=========================== */
+===================================== */
 .hero {
-    background: url('https://via.placeholder.com/1200x400/87CEEB/FFFFFF?text=Nueva+Colecci%C3%B3n+Invierno') 
+    background: url('https://via.placeholder.com/1200x400/efc9a2/5c3d2e?text=Colección+Otoño') 
                 center center/cover no-repeat;
-    height: 400px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    color: #5c3d2e;
     border-radius: 0 0 10px 10px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .hero h1 {
-    font-size: 2.8em;
+    background-color: rgba(253,235,211,0.85);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 2.6em;
     font-weight: 600;
-    margin-bottom: 15px;
 }
 
 .hero p {
+    margin-top: 15px;
+    background-color: rgba(253,235,211,0.7);
+    padding: 8px 20px;
+    border-radius: 6px;
     font-size: 1.1em;
-    margin-bottom: 20px;
 }
 
 .cta-btn {
-    background-color: #5c6bc0;
+    margin-top: 20px;
+    background-color: #a85c3b;
     color: #fff;
-    padding: 12px 28px;
+    padding: 12px 32px;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 500;
@@ -181,41 +187,46 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #3f51b5;
+    background-color: #8c4527;
 }
 
-/* ===========================
+/* =====================================
    PRODUCTOS DESTACADOS
-=========================== */
+===================================== */
 .featured-products {
-    padding: 20px 0;
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .featured-products h2 {
-    font-size: 1.8em;
-    color: #222;
+    font-size: 1.9em;
+    color: #5c3d2e;
     margin-bottom: 25px;
+    border-bottom: 1px solid #e6d3c2;
+    padding-bottom: 10px;
 }
 
 .product-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
 }
 
 .product-item {
-    background-color: #fff;
+    background-color: #fff5f0;
     border-radius: 10px;
-    padding: 15px;
-    width: 250px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 18px;
+    width: 260px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    text-align: center;
 }
 
 .product-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 .product-item img {
@@ -225,29 +236,29 @@ body {
 }
 
 .product-item h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
     font-weight: 500;
-    color: #333;
+    color: #5c3d2e;
 }
 
 .price {
-    color: #5c6bc0;
+    color: #a85c3b;
     font-weight: bold;
     margin-top: 6px;
 }
 
-/* ===========================
+/* =====================================
    PIE DE PÁGINA
-=========================== */
+===================================== */
 footer {
-    background-color: #222;
-    color: #ccc;
+    background-color: #5c3d2e;
+    color: #f5f5f5;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     font-size: 0.9em;
     margin-top: 60px;
 }
 
-footer span {
+footer span, footer p {
     color: #fff;
 }

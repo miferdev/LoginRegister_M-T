@@ -68,17 +68,17 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['username']) ? htmlspecia
             <h2>🔥 Destacados de la Semana</h2>
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="https://via.placeholder.com/250/FFA07A/FFFFFF?text=Camiseta+B%C3%A1sica" alt="Camiseta Básica">
+                    <img src="./frontend/img/camiseta.jpg" alt="Camiseta Básica">
                     <h3>Camiseta Básica Algodón</h3>
                     <p class="price">25,99 €</p>
                 </div>
                 <div class="product-item">
-                    <img src="https://via.placeholder.com/250/B0C4DE/FFFFFF?text=Jeans+Slim+Fit" alt="Jeans Slim Fit">
+                    <img src="./frontend/img/vaqueros.jpg" alt="Jeans Slim Fit">
                     <h3>Jeans Slim Fit</h3>
                     <p class="price">49,99 €</p>
                 </div>
                 <div class="product-item">
-                    <img src="https://via.placeholder.com/250/98FB98/FFFFFF?text=Sudadera+Oversize" alt="Sudadera Oversize">
+                    <img src="./frontend/img/sudadera.jpg" alt="Sudadera Oversize">
                     <h3>Sudadera Oversize</h3>
                     <p class="price">39,99 €</p>
                 </div>
