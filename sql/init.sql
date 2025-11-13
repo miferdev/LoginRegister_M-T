@@ -1,3 +1,5 @@
+USE testdb;
+
 CREATE TABLE CLIENTE (
     id_cliente SERIAL PRIMARY KEY,
     nombre VARCHAR(30) NOT NULL,
@@ -6,5 +8,5 @@ CREATE TABLE CLIENTE (
     telefono VARCHAR(13),
     direccion_envio VARCHAR(255),
     ciudad VARCHAR(100),
-    codigo_postal VARCHAR(20) 
+    codigo_postal VARCHAR(20)   
 );
