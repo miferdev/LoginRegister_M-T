@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="./css/style.css">
+    <title>Registro de Usuario</title>
+
 </head>
 
 <body>
@@ -17,12 +18,7 @@
 
             <form action="../backend/registercheck.php" method="post">
                 <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="text" name="apellido" placeholder="Apellido" required>
                 <input type="email" name="correo" placeholder="Correo electrónico" required>
-                <input type="text" name="telefono" placeholder="Telefono" required>
-                <input type="text" name="direccion" placeholder="Direccion de Envio" required>
-                <input type="text" name="ciudad" placeholder="Ciudad" required>
-                <input type="text" name="codigoPostal" placeholder="Codigo Postal" required>
                 <input type="password" name="password" placeholder="Contraseña" required>
                 <button type="submit" name="register">Registrar</button>
             </form>

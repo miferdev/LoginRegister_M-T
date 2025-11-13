@@ -1,4 +1,6 @@
-/* Reset básico */
+/* =========================
+   RESET Y ESTILO GENERAL
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,80 +8,140 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Fondo */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f2f2f2;
+    /* background: linear-gradient(135deg, #f3e0d2, #e6b89c, #d59a6b); */
+    background-color: #b4161b;
+    background-attachment: fixed;
+    color: #333;
 }
 
-/* Contenedor general */
+/* =========================
+   CONTENEDOR DEL FORMULARIO
+========================= */
 .container {
     width: 100%;
     max-width: 400px;
     padding: 20px;
 }
 
-/* Caja del formulario */
+/* =========================
+   CAJA DEL FORMULARIO
+========================= */
 .form-box {
-    background: #fff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fffaf5;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(90, 50, 30, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.form-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(90, 50, 30, 0.3);
+}
+
+/* =========================
+   TITULO
+========================= */
 h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    color: #5e3b2e;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
-/* Campos del formulario */
+/* =========================
+   INPUTS
+========================= */
 form input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #c5a78b;
+    border-radius: 6px;
+    background: #fffdfb;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Botón */
+form input:focus {
+    border-color: #a6672b;
+    box-shadow: 0 0 6px rgba(166, 103, 43, 0.3);
+    outline: none;
+}
+
+/* =========================
+   BOTÓN
+========================= */
 form button {
     width: 100%;
-    padding: 10px;
-    background-color: #5c67f2;
-    color: white;
+    padding: 12px;
+    background-color: #a6672b;
+    color: #fffaf5;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: 500;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 form button:hover {
-    background-color: #4750d4;
+    background-color: #874e1c;
+    transform: scale(1.03);
 }
 
-/* Enlaces */
+/* =========================
+   ENLACES
+========================= */
 .redirect {
     text-align: center;
     margin-top: 15px;
+    font-size: 0.95em;
 }
 
 .redirect a {
-    color: #5c67f2;
+    color: #a6672b;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 .redirect a:hover {
+    color: #874e1c;
     text-decoration: underline;
 }
 
-/* Mensajes de error */
+/* =========================
+   MENSAJES DE ERROR
+========================= */
 .error {
-    color: red;
+    color: #b4161b;
+    background: #ffe0e0;
+    border: 1px solid #e8a5a5;
+    padding: 8px 10px;
+    border-radius: 6px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 0.9em;
+}
+
+/* =========================
+   ANIMACIÓN SUAVE
+========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-box {
+    animation: fadeIn 0.8s ease-out;
 }
