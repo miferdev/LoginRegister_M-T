@@ -20,7 +20,7 @@
         }else {
             $conn->query("INSERT INTO CLIENTES (nombre, contrasenia, email, telefono, direccion_envio, ciudad, codigo_postal) VALUES ('$nombre', '$contrasenia', '$correo', '$telefono', '$direccion', '$ciudad', '$codigoPostal')");
         }
-        header("Location: index.php");
+        header("Location: ../frontend/registro.php");
     exit();
     }
 ?>
