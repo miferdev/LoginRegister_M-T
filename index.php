@@ -17,155 +17,14 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['username']) ? htmlspecia
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa | Moda y Estilo</title>
-    <style>
-        /* CSS Básico para la estructura (Mismo CSS de la versión anterior) */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        /* Estilos del Encabezado (Header) */
-        .header {
-            background-color: #ffffff;
-            color: #333;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo a {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #333;
-        }
-
-        /* Estilos del Perfil Desplegable */
-        .profile-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .profile-btn {
-            background-color: #f1f1f1; /* Nuevo color para el botón */
-            color: #333;
-            padding: 10px 15px;
-            font-size: 16px;
-            border: none; /* Quitamos el borde */
-            border-radius: 4px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            transition: background-color 0.3s;
-        }
-        .profile-btn:hover {
-            background-color: #e0e0e0;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #fff;
-            min-width: 180px; /* Ancho ajustado */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            border-radius: 4px;
-            padding: 10px;
-        }
-
-        .dropdown-content a {
-            color: #333;
-            padding: 10px 15px; /* Relleno ajustado */
-            text-decoration: none;
-            display: block;
-            border-radius: 3px;
-            margin: 5px 0;
-            text-align: center; /* Centrar texto */
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Estilos específicos para los nuevos botones (No logueado) */
-        .btn-login {
-            background-color: #007bff;
-            color: white !important;
-        }
-        .btn-login:hover {
-            background-color: #0056b3;
-        }
-        .btn-register {
-            background-color: #28a745;
-            color: white !important;
-        }
-        .btn-register:hover {
-            background-color: #1e7e34;
-        }
-        .btn-logout {
-            background-color: #dc3545;
-            color: white !important;
-        }
-
-        /* Mostrar el desplegable al pasar el ratón */
-        .profile-dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Estilos del Contenido Principal (Main) - Se omiten para brevedad, son los mismos */
-        .main-content {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .hero {
-            background: url('placeholder-hero.jpg') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            margin-bottom: 30px;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-
-        .cta-btn {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .product-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-    </style>
+    <link rel="stylesheet" href="./frontend/css/index.css">
 </head>
 <body>
 
     <header class="header">
         <div class="profile-dropdown">
             <button class="profile-btn">
-                👤 <?php echo $nombre_usuario; ?> ▾
+                <?php echo $nombre_usuario; ?> ▾
             </button>
             <div class="dropdown-content">
                 <?php
@@ -179,9 +38,11 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['username']) ? htmlspecia
                     echo '<a href="logout.php" class="btn-logout" style="margin-top: 10px;">Cerrar Sesión</a>';
                 } else {
                     // CONTENIDO SI EL USUARIO NO ESTÁ LOGUEADO (BOTONES REQUERIDOS)
-                    echo '<a href="login.php" class="btn-login">Iniciar Sesión</a>';
-                    echo '<a href="registro.php" class="btn-register">Registrarse</a>';
+                    echo '<a href="../frontend/login.php">Iniciar Sesión</a>';
+                    echo '<a href="../frontend/registro.php" class="btn-register">Registrarse</a>';
                 }
+
+               
                 ?>
             </div>
         </div>

@@ -16,8 +16,13 @@
             <?php if (isset($error_register)) echo "<p class='error'>$error_register</p>"; ?>
 
             <form action="../backend/registercheck.php" method="post">
-                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
                 <input type="email" name="correo" placeholder="Correo electrónico" required>
+                <input type="text" name="telefono" placeholder="Telefono" required>
+                <input type="text" name="direccion" placeholder="Direccion de Envio" required>
+                <input type="text" name="ciudad" placeholder="Ciudad" required>
+                <input type="text" name="codigoPostal" placeholder="Codigo Postal" required>
                 <input type="password" name="password" placeholder="Contraseña" required>
                 <button type="submit" name="register">Registrar</button>
             </form>
