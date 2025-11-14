@@ -37,13 +37,12 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
                     echo '<a href="#">Mis Pedidos</a>';
 
                     // Botón/enlace para cerrar sesión
-                    echo '<a href="logout.php" class="btn-logout" style="margin-top: 10px;">Cerrar Sesión</a>';
+                    echo '<a href="../backend/logout.php" class="btn-logout" style="margin-top: 10px;">Cerrar Sesión</a>';
                 } else {
                     // CONTENIDO SI EL USUARIO NO ESTÁ LOGUEADO (BOTONES REQUERIDOS)
                     echo '<a href="../frontend/login.php">Iniciar Sesión</a>';
                     echo '<a href="../frontend/registro.php" class="btn-register">Registrarse</a>';
                 }
-
 
                 ?>
             </div>
