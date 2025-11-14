@@ -248,6 +248,53 @@ body {
 }
 
 /* =====================================
+   TESTIMONIOS
+===================================== */
+.testimonios {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.testimonios h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial h4 {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+/* =====================================
    PIE DE PÁGINA
 ===================================== */
 footer {

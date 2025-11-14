@@ -13,12 +13,14 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa | Moda y Estilo</title>
     <link rel="stylesheet" href="./frontend/css/index.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -33,7 +35,7 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
                     echo '<span style="display: block; padding: 5px 15px; font-weight: bold; border-bottom: 1px solid #eee;">¡Hola, ' . $nombre_usuario . '!</span>';
                     echo '<a href="#">Mi Cuenta</a>';
                     echo '<a href="#">Mis Pedidos</a>';
-                    
+
                     // Botón/enlace para cerrar sesión
                     echo '<a href="logout.php" class="btn-logout" style="margin-top: 10px;">Cerrar Sesión</a>';
                 } else {
@@ -42,7 +44,7 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
                     echo '<a href="../frontend/registro.php" class="btn-register">Registrarse</a>';
                 }
 
-               
+
                 ?>
             </div>
         </div>
@@ -85,6 +87,26 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
             </div>
         </section>
 
+        <!-- SECCIÓN DE TESTIMONIOS -->
+        <section class="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="contenedor-testimonios">
+                <div class="testimonial">
+                    <p>"Me encantó la calidad del producto y la atención fue excelente. ¡Volveré a comprar seguro!"</p>
+                    <h4>- María López</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Rápido envío y los productos llegaron perfectos. Muy recomendable."</p>
+                    <h4>- Juan Pérez</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Los diseños son preciosos y originales. Mis amigos quedaron encantados."</p>
+                    <h4>- Ana Torres</h4>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer style="background-color: #333; color: white; text-align: center; padding: 20px 0; margin-top: 50px;">
@@ -92,4 +114,5 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
     </footer>
 
 </body>
+
 </html>
