@@ -5,10 +5,10 @@ session_start();
 // Lógica de Verificación:
 // Comprobamos si la variable de sesión 'user_logged_in' existe y es TRUE.
 // En un sistema real, se comprobaría la existencia de un ID de usuario o similar.
-$usuario_logueado = isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] === true;
+$usuario_logueado = isset($_SESSION['nombre']);
 
 // Simulación de Nombre de Usuario (para mostrar si está logueado)
-$nombre_usuario = $usuario_logueado ? (isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : 'Usuario') : 'Perfil';
+$nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialchars($_SESSION['nombre']) : 'Usuario') : 'Perfil';
 
 ?>
 <!DOCTYPE html>
@@ -31,8 +31,8 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['username']) ? htmlspecia
                 if ($usuario_logueado) {
                     // CONTENIDO SI EL USUARIO ESTÁ LOGUEADO
                     echo '<span style="display: block; padding: 5px 15px; font-weight: bold; border-bottom: 1px solid #eee;">¡Hola, ' . $nombre_usuario . '!</span>';
-                    echo '<a href="micuenta.php">Mi Cuenta</a>';
-                    echo '<a href="pedidos.php">Mis Pedidos</a>';
+                    echo '<a href="#">Mi Cuenta</a>';
+                    echo '<a href="#">Mis Pedidos</a>';
                     
                     // Botón/enlace para cerrar sesión
                     echo '<a href="logout.php" class="btn-logout" style="margin-top: 10px;">Cerrar Sesión</a>';
