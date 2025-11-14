@@ -13,8 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background: linear-gradient(135deg, #f3e0d2, #e6b89c, #d59a6b); */
-    background-color: #b4161b;
+    background: linear-gradient(135deg, #fcf8f2, #e6b89c, #d59a6b);
     background-attachment: fixed;
     color: #333;
 }
