@@ -17,7 +17,6 @@ body {
     background-attachment: fixed;
     color: #333;
 }
-
 /* =========================
    CONTENEDOR DEL FORMULARIO
 ========================= */
@@ -26,7 +25,6 @@ body {
     max-width: 400px;
     padding: 20px;
 }
-
 /* =========================
    CAJA DEL FORMULARIO
 ========================= */
@@ -42,7 +40,6 @@ body {
     transform: translateY(-4px);
     box-shadow: 0 8px 22px rgba(90, 50, 30, 0.3);
 }
-
 /* =========================
    TITULO
 ========================= */
@@ -52,7 +49,6 @@ h2 {
     margin-bottom: 25px;
     font-weight: 600;
 }
-
 /* =========================
    INPUTS
 ========================= */
