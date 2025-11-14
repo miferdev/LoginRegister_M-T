@@ -2,13 +2,13 @@
     session_start();
     require_once("config.php");
 
-    $nombre = $_POST["nombre"];
-    $contrasenia = password_hash($_POST["password"], PASSWORD_DEFAULT);
-    $correo = $_POST["correo"];
-    $telefono = $_POST["telefono"] ?? "";
-    $direccion = $_POST["direccion"] ?? "";
-    $ciudad = $_POST["ciudad"] ?? "";
-    $codigoPostal = $_POST["codigoPostal"] ?? "";
+    $nombre = $_POST['nombre'];
+    $contrasenia = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $correo = $_POST['correo'];
+    $telefono = $_POST['telefono'] ?? "";
+    $direccion = $_POST['direccion'] ?? "";
+    $ciudad = $_POST['ciudad'] ?? "";
+    $codigoPostal = $_POST['codigoPostal'] ?? "";
 
     $checkMail = $conn->query("SELECT email FROM CLIENTE WHERE email = '$correo'");
     
