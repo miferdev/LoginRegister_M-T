@@ -297,15 +297,64 @@ body {
 /* =====================================
    PIE DE PÁGINA
 ===================================== */
-footer {
-    background-color: #5c3d2e;
-    color: #f5f5f5;
-    text-align: center;
-    padding: 25px;
-    font-size: 0.9em;
-    margin-top: 60px;
+/* ------------------ FOOTER ------------------ */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    font-size: 0.95rem;
 }
 
-footer span, footer p {
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info, .footer-social, .footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 15px;
     color: #fff;
 }
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 0.85rem;
+}
+
+/* Opcional: estilos para que los íconos o enlaces sociales se vean separados */
+.footer-social a {
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info, .footer-social, .footer-links {
+        margin-bottom: 20px;
+    }
+}
+

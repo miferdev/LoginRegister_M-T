@@ -108,9 +108,33 @@ $nombre_usuario = $usuario_logueado ? (isset($_SESSION['nombre']) ? htmlspecialc
 
     </main>
 
-    <footer style="background-color: #333; color: white; text-align: center; padding: 20px 0; margin-top: 50px;">
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Clothing Shop</h3>
+            <p>Tu tienda de moda y estilo en línea.</p>
+            <p>Dirección: Calle Villablanca 79, Madrid, España</p>
+            <p>Teléfono: +34 xxx xxx xxx</p>
+            <p>Correo: contacto@clothingshop.com</p>
+        </div>
+        <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Instagram</a> |
+            <a href="#" target="_blank">TikTok</a>
+        </div>
+        <div class="footer-links">
+            <h4>Enlaces</h4>
+            <a href="#">Política de Privacidad</a><br>
+            <a href="#">Términos y Condiciones</a><br>
+            <a href="#">Devoluciones</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
         <p>&copy; <?php echo date("Y"); ?> Clothing Shop. Todos los derechos reservados.</p>
-    </footer>
+    </div>
+</footer>
+
 
 </body>
 
